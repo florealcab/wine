@@ -1,5 +1,5 @@
 FROM suchja/x11client:latest
-MAINTAINER Jan Suchotzki <jan@suchotzki.de>
+MAINTAINER Aaron Madlon-Kay <aaron@madlon-kay.com>
 
 # Inspired by monokrome/wine
 ENV WINE_MONO_VERSION 0.0.8
@@ -38,4 +38,4 @@ ENV WINEARCH win32
 # Use xclient's home dir as working dir
 WORKDIR /home/xclient
 
-RUN echo "alias winegui='wine explorer /desktop=DockerDesktop,1024x768'" > ~/.bash_aliases 
+RUN echo "alias winegui='wine explorer /desktop=DockerDesktop,1024x768'" > ~/.bash_aliases

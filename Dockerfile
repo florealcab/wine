@@ -26,7 +26,7 @@ RUN curl -SL 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src
 
 # Get latest version of mono for wine
 RUN mkdir -p /usr/share/wine/mono \
-	&& curl -SL 'http://sourceforge.net/projects/wine/files/Wine%20Mono/$WINE_MONO_VERSION/wine-mono-$WINE_MONO_VERSION.msi/download' -o /usr/share/wine/mono/wine-mono-$WINE_MONO_VERSION.msi \
+	&& curl -SL 'https://sourceforge.net/projects/wine/files/Wine%20Mono/$WINE_MONO_VERSION/wine-mono-$WINE_MONO_VERSION.msi/download' -o /usr/share/wine/mono/wine-mono-$WINE_MONO_VERSION.msi \
 	&& chmod +x /usr/share/wine/mono/wine-mono-$WINE_MONO_VERSION.msi
 
 # Wine really doesn't like to be run as root, so let's use a non-root user

@@ -1,5 +1,5 @@
 FROM florealcab/x11client:latest
-MAINTAINER Aaron Madlon-Kay <aaron@madlon-kay.com>
+MAINTAINER Floréal Cabanettes <contact@alypie.fr>
 
 # Inspired by monokrome/wine
 ENV WINE_MONO_VERSION 4.9.4

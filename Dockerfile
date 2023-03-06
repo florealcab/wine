@@ -1,4 +1,4 @@
-FROM amake/x11client:latest
+FROM florealcab/x11client:latest
 MAINTAINER Aaron Madlon-Kay <aaron@madlon-kay.com>
 
 # Inspired by monokrome/wine
